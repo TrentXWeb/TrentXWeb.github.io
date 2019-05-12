@@ -46,9 +46,6 @@ hr {
     font-size: 12px;
 }
 
-.print_footer {
-    display: none;
-}
 
 /*Styling for the main header and links.*/
 
@@ -93,37 +90,8 @@ hr {
         transform: translate(-50%, -50%);
     }
 
-    #Site_Header > table > tr, th {
-        border: 2px solid black;
-        width: 20%;
-        padding-left: 16px;
-    }
+ 
 
-    #Site_Header > table {
-        transform: skewX(-40deg);
-        width: 100vw;
-        margin: 0;
-        padding-top: 12px;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-/*Links*/
-.main_links {
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    -webkit-text-stroke-color: rgba(0,0,0, .8);
-    -webkit-text-stroke-width: 1px;
-    text-decoration: none;
-}
-
-    .main_links:hover {
-        color: rgba(255,255,255,.5);
-    }
-
-    .main_links:active {
-        color: silver;
-    }
 
 
 /*-----------------------------------------------------------------*/
@@ -132,91 +100,6 @@ hr {
     font-size: 2vw;
 }
 
-
-/*-----------------------------------------------------------------*/
-
-
-
-
-
-/*Unique styling for each link*/
-
-#l1 {
-    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
-    transform: translateY(-4px);
-    grid-area: link1;
-}
-
-
-#l2 {
-    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
-    transform: translateY(4px);
-    grid-area: link2;
-}
-
-
-#l3 {
-    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
-    transform: translateY(-4px);
-    grid-area: link3;
-}
-
-
-#l4 {
-    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
-    transform: translateY(4px);
-    grid-area: link4;
-}
-
-
-#l5 {
-    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
-    transform: translateY(-4px);
-    grid-area: link5;
-   
-}
-
-.link {
-    font-size: 24px;
-    font-weight: bolder;
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    border: none;
-    width: 80%;
-    padding-bottom: 16px;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    transform: skew(-40deg);
-    display: grid;
-    grid-template-areas: 'link1 link2 link3 link4 link5';
-    grid-gap: 12px;
-    grid-row-gap: 16px;
-    text-align: center;
-    color: white;
-    -webkit-text-stroke-color: rgba(0,0,0, .8);
-    -webkit-text-stroke-width: 1px;
-}
-
-    .link > div{
-        border: 1px solid black
-    }
-
-    .link > div > em {
-        display: inline-block;
-        transform: skew(40deg);
-    }
-
-     
-/*The links themselves*/
-
-    .main_links:hover {
-        color: rgba(255,255,255,.5);
-    }
-
-    .main_links:active {
-        color: silver;
-    }
-
-/*Media queries for multimedia. Was using them for a different design so they are not tuned for this page*/
 
 @media screen and (max-width: 1024px) {
 
