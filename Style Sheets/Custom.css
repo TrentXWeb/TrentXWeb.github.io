@@ -1,0 +1,126 @@
+﻿h4 {
+    color: white;
+    text-align: center;
+}
+
+#num1 {
+    font-size: 16px;
+}
+
+
+img {
+    border: 3px solid black
+}
+
+.item1 {
+    grid-area: head;
+}
+
+    .item1 > b, h1 {
+        color: white;
+        text-align: center;
+        padding: 4vw;
+    }
+
+.item2 {
+    grid-area: left;
+}
+
+.item3 {
+    grid-area: right;
+}
+
+.item4 {
+    grid-area: Q1;
+    background: rgba(0,0,0,.4);
+    border: 1px solid black;
+    padding: 4vw;
+    font-size: 1.3vw
+}
+
+
+.item5 {
+    grid-area: Q2;
+    background: rgba(0,0,0,.4);
+    border: 1px solid black;
+    padding: 4vw;
+    font-size: 1.3vw
+}
+
+.item6 {
+    grid-area: Q3;
+    background: rgba(0,0,0,.4);
+    border: 1px solid black;
+    padding: 4vw;
+    font-size: 1.3vw
+}
+
+
+.item7 {
+    grid-area: Q4;
+    background: rgba(0,0,0,.4);
+    border: 1px solid black;
+    padding: 4vw;
+    font-size: 1.3vw
+}
+
+
+.item8 {
+    grid-area: QH;
+    background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 'head head head head' 'left left right right' 'QH QH QH QH' 'Q1 Q2 Q3 Q4';
+    grid-gap: 12px;
+    grid-row-gap: 2vw;
+    padding: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-areas: 'head head head head' 'left left right right' 'QH QH QH QH' 'Q1 Q1 Q2 Q2' 'Q3 Q3 Q4 Q4';
+    }
+
+    .item4 {
+        grid-area: Q1;
+        background: rgba(0,0,0,.4);
+        border: 1px solid black;
+        padding: 4vw;
+        font-size: 2vw
+    }
+
+
+    .item5 {
+        grid-area: Q2;
+        background: rgba(0,0,0,.4);
+        border: 1px solid black;
+        padding: 4vw;
+        font-size: 2vw
+    }
+
+    .item6 {
+        grid-area: Q3;
+        background: rgba(0,0,0,.4);
+        border: 1px solid black;
+        padding: 4vw;
+        font-size: 2vw
+    }
+
+    .item7 {
+        grid-area: Q4;
+        background: rgba(0,0,0,.4);
+        border: 1px solid black;
+        padding: 4vw;
+        font-size: 2vw
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    #num1 {
+        font-size: 12px;
+    }
+}

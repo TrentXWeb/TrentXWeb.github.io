@@ -1,0 +1,311 @@
+﻿
+body {
+    /*Main background image.*/
+    background-image: linear-gradient(to bottom right, black, rgb(40,40,40), rgb(40,20,20), black);
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+/*Basic generic styling form the site*/
+p {
+    color: lightgray;
+}
+
+h1 {
+    font-family: Bahnschrift, fantasy;
+    color: lightgray;
+    text-align: center;
+}
+
+h2 {
+    color: lightgray;
+    text-align: center;
+}
+
+h3 {
+    color: lightgray;
+    text-align: center;
+}
+
+div {
+    color: lightgray;
+}
+
+hr {
+    height: 4px;
+    border: 0;
+    background-image: linear-gradient(to right, transparent, rgba(80,0,0,.5), rgba(255,0,0,.5), rgba(80,0,0,.5),transparent)
+}
+
+/*Footers*/
+
+.footer {
+    padding-left: 16px;
+    padding-bottom: 16px;
+    font-size: 12px;
+}
+
+.print_footer {
+    display: none;
+}
+
+/*Styling for the main header and links.*/
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+#Site_Header {
+    padding: 0;
+    margin: 0px;
+    background: -webkit-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.0))
+}
+
+    #Site_Header > div {
+        padding: 24px;
+        margin: 0px;
+    }
+
+    #Site_Header div > #Title_Name {
+        text-align: center;
+        font-family: Arial;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 40px;
+        z-index: 1;
+        background: -webkit-linear-gradient(black,white,black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(0,0,0);
+    }
+
+    #Site_Header > div > img {
+        width: 100vw;
+        height: 40px;
+        border: none;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #Site_Header > table > tr, th {
+        border: 2px solid black;
+        width: 20%;
+        padding-left: 16px;
+    }
+
+    #Site_Header > table {
+        transform: skewX(-40deg);
+        width: 100vw;
+        margin: 0;
+        padding-top: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+/*Links*/
+.main_links {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    -webkit-text-stroke-color: rgba(0,0,0, .8);
+    -webkit-text-stroke-width: 1px;
+    text-decoration: none;
+}
+
+    .main_links:hover {
+        color: rgba(255,255,255,.5);
+    }
+
+    .main_links:active {
+        color: silver;
+    }
+
+
+/*-----------------------------------------------------------------*/
+
+#main_content {
+    font-size: 2vw;
+}
+
+
+/*-----------------------------------------------------------------*/
+
+
+
+
+
+/*Unique styling for each link*/
+
+#l1 {
+    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
+    transform: translateY(-4px);
+    grid-area: link1;
+}
+
+
+#l2 {
+    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
+    transform: translateY(4px);
+    grid-area: link2;
+}
+
+
+#l3 {
+    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
+    transform: translateY(-4px);
+    grid-area: link3;
+}
+
+
+#l4 {
+    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
+    transform: translateY(4px);
+    grid-area: link4;
+}
+
+
+#l5 {
+    background-image: linear-gradient(to bottom right, rgb(40,40,40), black);
+    transform: translateY(-4px);
+    grid-area: link5;
+   
+}
+
+.link {
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    border: none;
+    width: 80%;
+    padding-bottom: 16px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    transform: skew(-40deg);
+    display: grid;
+    grid-template-areas: 'link1 link2 link3 link4 link5';
+    grid-gap: 12px;
+    grid-row-gap: 16px;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-color: rgba(0,0,0, .8);
+    -webkit-text-stroke-width: 1px;
+}
+
+    .link > div{
+        border: 1px solid black
+    }
+
+    .link > div > em {
+        display: inline-block;
+        transform: skew(40deg);
+    }
+
+     
+/*The links themselves*/
+
+    .main_links:hover {
+        color: rgba(255,255,255,.5);
+    }
+
+    .main_links:active {
+        color: silver;
+    }
+
+/*Media queries for multimedia. Was using them for a different design so they are not tuned for this page*/
+
+@media screen and (max-width: 1024px) {
+
+    #Site_Header > div > #Title_Name {
+        text-align: center;
+        font-family: Arial;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 4vw;
+        color: white;
+        z-index: 1;
+        background: -webkit-linear-gradient(black,white,black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(0,0,0);
+    }
+
+    #Site_Header > table {
+        padding-top: 0;
+    }
+
+    #main_content {
+        font-size: 3vw;
+        padding: 0;
+
+    }
+
+    canvas {
+        padding-top:1vw;
+        width:4vw;
+        height:4vw
+    }
+
+    .link {
+        font-size: 20px;
+        grid-template-areas: 'link2 link3 link3 link4' 'link1 link1 link5 link5';
+    }
+
+    .material-icons {
+        font-size: 20px;
+    }
+}
+
+/*Media queries for printing*/
+@media screen and (max-width: 500px) {
+
+    #Site_Header > div > #Title_Name {
+        text-align: center;
+        font-family: Arial;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        z-index: 1;
+        background: -webkit-linear-gradient(black,white,black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(0,0,0);
+    }
+
+    .link {
+        font-size: 16px;
+    }
+    .material-icons {
+        font-size: 16px;
+    }
+
+
+}
+
+
+    @media print {
+
+        #main_content {
+            font-size: 16px;
+            padding: 0;
+        }
+
+        .no_print {
+            display: none !important;
+        }
+
+        .print_footer {
+            display: initial;
+            border: 1px dashed black;
+        }
+    }
+
+
+
